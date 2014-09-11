@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- <title>#{get 'title' /}</title> -->
+        <title>&{'calculator.title'}</title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        <script src="@{'/public/javascripts/cal.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+    </head>
+    <body>
+        <!-- #{doLayout /} -->
+        <h3>&{'calculator.header'}</h3>
+        <hr>
+        <!-- <form name="calc"> -->
+            <table border="2" class="calTbc">
+                <tr>
+                    <th colspan="3" align="right">
+                        <div id="output" >0</div>
+                    </th>
+                    <th>
+                        <div id="opeBox"></div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="７" onclick="calc_run(7)">
+                    </td>
+                    <td>
+                        <input type="button" value="８" onclick="calc_run(8)">
+                    </td>
+                    <td>
+                        <input type="button" value="９" onclick="calc_run(9)">
+                    </td>
+                    <td>
+                        <input type="button" value="÷" onclick="calc_run('/')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="４" onclick="calc_run(4)">
+                    </td>
+                    <td>
+                        <input type="button" value="５" onclick="calc_run(5)">
+                    </td>
+                    <td>
+                        <input type="button" value="６" onclick="calc_run(6)">
+                    </td>
+                    <td>
+                        <input type="button" value="×" onclick="calc_run('*')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="１" onclick="calc_run(1)">
+                    </td>
+                    <td>
+                        <input type="button" value="２" onclick="calc_run(2)">
+                    </td>
+                    <td>
+                        <input type="button" value="３" onclick="calc_run(3)">
+                    </td>
+                    <td>
+                        <input type="button" value="－" onclick="calc_run('-')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="０" onclick="calc_run(0)">
+                    </td>
+                    <td>
+                        <input type="button" value="・" onclick="calc_period('.')">
+                    </td>
+                    <td>
+                        <input type="button" value="＝" onclick="calc_equal('=')">
+                    </td>
+                    <td>
+                        <input type="button" value="＋" onclick="calc_run('+')">
+                    </td>
+                </tr>
+            </table>
+        <!-- </form>-->
+    </body>
+</html>

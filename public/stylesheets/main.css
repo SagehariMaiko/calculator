@@ -1,0 +1,62 @@
+.calTbc{ /* 電卓本体 */
+    background-color: #3399FF;  　/* 背景色 */
+   -moz-border-radius: 7px; /* 角丸 Firefox */
+   -webkit-border-radius: 7px; /* 角丸 Safari、Google Chrome */
+   border-radius: 7px; /* 角丸 IE9 */
+   font-size: 30px; /* 文字のサイズ */
+}
+
+
+
+.calTbc input{ /* 数値、演算子ボタン */
+  width: 55px; /* ボタンの幅 */
+  height: 55px; /* ボタンの高さ */
+  color: navy; /* 文字の色 */
+  background-color: #99CCFF;    /* ボタンの色　*/
+  text-align: center; /* 文字の水平位置 */
+  border-width: 1px;
+  -moz-border-radius: 7px;   /* 角丸 Firefox */
+  -webkit-border-radius: 7px;    /* 角丸 Safari、Google Chrome */
+  border-radius: 7px;    /* 角丸 IE9 */
+  font-size: 1em;
+  /* font-weight: bold; */ /* 文字の太さ */
+  cursor: pointer; /* カーソルの形状 */
+    }
+
+.calTbc #output{　/* 表示ボックス */
+  width: 165px;
+  color: navy;
+  background-color: #DCDCDC;
+　padding-right: 3px; /* 内側余白 */
+  margin-left: 3px;
+  text-align: right;
+  /* border: 7px #a9a9a9 inset;*/
+  font-size: 1.3em;
+  /* font-weight: bold; */
+  ime-mode: inactive; /* 入力モード切替 半角,英数 */
+    }
+
+.calTbc input[type=button]:hover { /* ボタンにマウスが乗ったら背景色変更 */
+   background-color: #B2B2B2;
+    }
+
+.calTbc #opeBox{ /* 演算子表示 ボックス */
+  /* width: 55px; */
+  color: navy;
+  background-color: #DCDCDC;
+  margin-left: 3px;
+  text-align: center;
+  /* border: 7px #a9a9a9 inset;*/
+  font-size: 1.3em;
+  font-weight: bold;
+  ime-mode: inactive; /* 入力モード切替 半角,英数 */
+    }
+
+.calTbc td{
+  padding: 1px 1px 1px 1px; /* 内側余白 上,右,下,左*/
+   border-width: 0px;
+    }
+
+input[type="button"]::-moz-focus-inner{ /* Firefoxのボタンの点線を消す */
+   border :0px;
+    }

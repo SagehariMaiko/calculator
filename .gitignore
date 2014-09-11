@@ -1,0 +1,20 @@
+/tmp
+/.classpath
+/.project
+/.settings
+/eclipse
+/bin
+/application.log*
+/logs/
+*.pid
+/data/servicebuilding/*
+/dist/
+/conf/application.conf
+*.dump
+/test-result/*
+
+# for IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
